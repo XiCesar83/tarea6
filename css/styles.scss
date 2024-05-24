@@ -1,0 +1,208 @@
+$base-font-color-light:#E2E2E2;
+$base-font-color-dark:#3F404A;
+$base-font-p-color:#DDDCE0;
+$base-background-color:#FAFAFA;
+
+$tools:(
+    "supervisor":#45ACAB,
+    "team-builder":#B14646,
+    "karma":#D3A559,
+    "calculator":#4A83B1,
+);
+@each $name, $color in $tools {
+    .tools--#{$name} {
+        border-top: 5px solid $color;
+    }
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border: 1px solid blue;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: auto;
+    gap: 6rem;
+    margin: auto;
+    padding: 1rem;
+    background-color:$base-background-color;
+    box-shadow: 0px 6px 18px 3px #ddd;
+    border: 1px solid red;
+  &__wrapper{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid blue;
+    box-shadow: none;
+         &-tittles{
+            color: $base-font-color-light;
+            /*flex-grow: 1;*/
+            &--tittle1{
+                margin-top: .5rem;
+                font-size: 1rem;
+                color: $base-font-color-light;
+            }
+            &--tittle2{
+                font-size: 1rem;
+                color: $base-font-color-dark;
+            }
+            &.wrapper--paragraph{
+                font-size: .5rem;
+                padding: .5rem .5rem;
+                color: $base-font-p-color;
+                text-align: center;
+            }
+        }    
+
+  }/*Card wrapper*/
+@media only screen and (min-width) {
+    
+}
+    &__tools{
+        display: flex;
+        justify-content: space-around;
+        width: 200px;
+        height: 150px;
+        gap: 1rem;
+        box-shadow: 3px 3px 3px 3px #ddd;
+        background-color: $base-background-color;
+        &-box1{
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+        }
+        &.tools--supervisor{
+            display: flex;
+            flex-direction: column;
+            border-radius: .5rem;
+            padding: .5rem;
+            h3{
+                font-size: 1rem; 
+                color: $base-font-color-dark;
+               text-align: left;
+            }
+            p{
+                font-size: .5rem;
+                padding: .5rem .5rem;
+                color: $base-font-p-color;
+                text-align:left; 
+            }
+            img{
+                background-image: url("/tareas/tarea6/img/icon-supervisor.svg");
+                width: 30px;
+                height: 30px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                margin-top: 1rem;
+                margin-left: 80%;
+            }
+        }  
+        &-box2{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: left;
+            gap:1rem;
+        }
+            &.tools--team-builder{
+                display: flex;
+                flex-direction: column;
+                border-radius: .5rem;
+                padding: .5rem;
+                h3{
+                    font-size: 1rem; 
+                    color: $base-font-color-dark;
+                }
+                p{
+                    font-size: .5rem;
+                    padding: .5rem .5rem;
+                    color: $base-font-p-color;
+                    text-align: left; 
+                }
+                img{
+                    background-image: url("/tareas/tarea6/img/icon-team-builder.svg");
+                    width: 30px;
+                    height: 30px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    margin-top: 1rem;
+                    margin-left: 80%;
+                }
+            }
+            &.tools--karma{
+                display: flex;
+                flex-direction: column;
+                border-radius: .5rem;
+                padding: .5rem;
+                p{
+                    font-size: .5rem;
+                    padding: .5rem .5rem;
+                    color: $base-font-p-color;
+                    text-align: left; 
+                }
+                img{
+                    background-image: url("/tareas/tarea6/img/icon-karma.svg");
+                    width: 30px;
+                    height: 30px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    margin-top: 1rem;
+                    margin-left: 80%;
+                }
+            }
+
+       
+       &-box3{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+       }
+        &.tools--calculator{
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            border-radius: .5rem;
+            padding: .5rem;
+            p{
+                font-size: .5rem;
+                padding: .5rem .5rem;
+                color: $base-font-p-color;
+                text-align: left; 
+            }
+            img{
+                background-image: url("/tareas/tarea6/img/icon-calculator.svg");
+                width: 30px;
+                height: 30px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                margin-top: 1rem;
+                margin-left: 80%;
+            }
+        }
+    }
+}
+ 
+  
+        
+        
+
+        
+    
+

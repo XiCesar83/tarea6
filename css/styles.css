@@ -1,0 +1,195 @@
+.tools--supervisor {
+  border-top: 5px solid #45ACAB;
+}
+
+.tools--team-builder {
+  border-top: 5px solid #B14646;
+}
+
+.tools--karma {
+  border-top: 5px solid #D3A559;
+}
+
+.tools--calculator {
+  border-top: 5px solid #4A83B1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border: 1px solid blue;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  height: auto;
+  gap: 6rem;
+  margin: auto;
+  padding: 1rem;
+  background-color: #FAFAFA;
+  box-shadow: 0px 6px 18px 3px #ddd;
+  border: 1px solid red;
+  /*Card wrapper*/
+}
+.card__wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid blue;
+  box-shadow: none;
+}
+.card__wrapper-tittles {
+  color: #E2E2E2;
+  /*flex-grow: 1;*/
+}
+.card__wrapper-tittles--tittle1 {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #E2E2E2;
+}
+.card__wrapper-tittles--tittle2 {
+  font-size: 1rem;
+  color: #3F404A;
+}
+.card__wrapper-tittles.wrapper--paragraph {
+  font-size: 0.5rem;
+  padding: 0.5rem 0.5rem;
+  color: #DDDCE0;
+  text-align: center;
+}
+.card__tools {
+  display: flex;
+  justify-content: space-around;
+  width: 200px;
+  height: 150px;
+  gap: 1rem;
+  box-shadow: 3px 3px 3px 3px #ddd;
+  background-color: #FAFAFA;
+}
+.card__tools-box1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.card__tools.tools--supervisor {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+.card__tools.tools--supervisor h3 {
+  font-size: 1rem;
+  color: #3F404A;
+  text-align: left;
+}
+.card__tools.tools--supervisor p {
+  font-size: 0.5rem;
+  padding: 0.5rem 0.5rem;
+  color: #DDDCE0;
+  text-align: left;
+}
+.card__tools.tools--supervisor img {
+  background-image: url("/tareas/tarea6/img/icon-supervisor.svg");
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 1rem;
+  margin-left: 80%;
+}
+.card__tools-box2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+  gap: 1rem;
+}
+.card__tools.tools--team-builder {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+.card__tools.tools--team-builder h3 {
+  font-size: 1rem;
+  color: #3F404A;
+}
+.card__tools.tools--team-builder p {
+  font-size: 0.5rem;
+  padding: 0.5rem 0.5rem;
+  color: #DDDCE0;
+  text-align: left;
+}
+.card__tools.tools--team-builder img {
+  background-image: url("/tareas/tarea6/img/icon-team-builder.svg");
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 1rem;
+  margin-left: 80%;
+}
+.card__tools.tools--karma {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+.card__tools.tools--karma p {
+  font-size: 0.5rem;
+  padding: 0.5rem 0.5rem;
+  color: #DDDCE0;
+  text-align: left;
+}
+.card__tools.tools--karma img {
+  background-image: url("/tareas/tarea6/img/icon-karma.svg");
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 1rem;
+  margin-left: 80%;
+}
+.card__tools-box3 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.card__tools.tools--calculator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+.card__tools.tools--calculator p {
+  font-size: 0.5rem;
+  padding: 0.5rem 0.5rem;
+  color: #DDDCE0;
+  text-align: left;
+}
+.card__tools.tools--calculator img {
+  background-image: url("/tareas/tarea6/img/icon-calculator.svg");
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 1rem;
+  margin-left: 80%;
+}/*# sourceMappingURL=styles.css.map */
